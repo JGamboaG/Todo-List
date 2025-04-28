@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+h1{
+    margin-inline: 1rem;
+    margin-top: 0.5rem;
+    font-size: 30px;
+}
+
+hr{
+    margin-inline: 1rem;
+}
+
+.card{
+    width: 700px;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    gap: 0.75rem;
+}
+
+.agregar-tarea{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin-inline: 1rem;
+}
+
+#agregarTarea{
+    width: 60px;
+    height: 28px;
+    background-color: #1A7742;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+}
+
+#nuevaTarea{
+    height: 25px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+}
+
+.entrada-texto{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 4px;
+}
+
+.resumen{
+    display: flex;
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+#total{
+    font-weight: bold;
+}
+
+#finalizadas{
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: flex;
+    align-items: center;
+}
+
+li .contenido-tarea{
+    display: flex;
+    align-items:center;
+    flex: 1;
+}
+
+li .id-tarea{
+    margin-right: 20px;
+    width: 60px;
+    text-align: right;
+}
+
+li input{
+    margin-inline: 2rem;
+}
+
+.header-tareas{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.header-tareas span{
+    padding: 0 10px;
+}
+
+.relleno{
+    width: 20px;
+}
+
+.id-titulo{
+    width: 60px;
+    text-align: right;
+}
+
+.tarea-titulo{
+    flex: 1;
+    padding-left: 20px;
+}
+
+.tachado{
+    text-decoration: line-through;
+}
+
+.eliminar-elemento{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.eliminar-elemento:hover{
+    color: darkred;
+}
+
